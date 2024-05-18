@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent background from scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #0077B6, #CAF0F8);
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+#Company_name {
+    font-style: italic;
+    font-weight: 350;
+}
+
+#logo_img {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.pages a {
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    padding-right: 10px;
+    margin-right: 8px;
+}
+
+.searchbar input {
+    margin-right: 10px;
+    padding-left: 8px;
+    font-size: 13px;
+    width: 11rem;
+    height: fit-content;
+    padding: 4px;
+    border: none;
+    color: black;
+}
+
+#search_logo {
+    margin-right: 10px;
+}
+
+.button {
+    margin-right: 4px;
+    background-color: #0077B6;
+    padding: 4.2px;
+    border-radius: 7px;
+    border: none;
+}
+
+.mid {
+    position: relative;
+    background-image: url(Images/travel-banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.mid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,0.8));
+    z-index: 1;
+}
+
+.mid-left {
+    margin-left: 5px;
+}
+
+.mid-content {
+    margin-left: 3%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    text-align: left;
+}
+
+.mid-center-title {
+    position: relative;
+    z-index: 2;
+    margin-top: 1%;
+    margin-left: 8%;
+    font-size: 36px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.mid-center-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 6%;
+    margin-left: 8.3%;
+    font-family: Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    font-weight: 600;
+    width: 300px;
+    height: fit-content;
+}
+
+#booknow_button {
+    position: relative;
+    z-index: 2;
+    margin-top: 12%;
+    margin-left: 8.3%;
+    background-color: #017bbc;
+    padding: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+}
+
+.social-links a {
+    margin-bottom: 10px;
+    font-size: 35px;
+    margin-left: 0%;
+    width: fit-content;
+    height: fit-content; 
+}
+
+.line hr {
+    position: relative;
+    z-index: 2;
+    border: none;
+    width: 2px;
+    height: 240px;
+    background-color: white;
+    transform: rotate(90deg);
+    margin-top: 60px;
+    margin-bottom: 55px;
+    margin-left: 1.2%;
+}
+
+.searchResultsContainer {
+    margin-left: 39%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.5%;
+    text-align: left;
+    width: 50%;
+    height: 90%;
+    overflow-y: auto; /* Ensure the search results can scroll */
+}
+
+.search-results {
+    position: absolute;
+    z-index: 2;
+    top:10%;
+    left: 70%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.search-results img {
+    width: 100%;
+    aspect-ratio: 16/4;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.searchCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: #000000 0px 0px 14px -2px;
+}
+
+.searchCardContainer {
+    padding: 15px;
+    width: calc(100% - 30px);
+}
+
+.searchCardTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.searchCardDescription {
+    color: #6b6b6b;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+
+.searchCardButton {
+    color: #ffffff;
+    background-color: #0d7a81;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
